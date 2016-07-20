@@ -217,7 +217,7 @@ class GuillotineTransitionAnimation: NSObject {
     }
     
     private func setupDisplayLink() {
-        displayLink = CADisplayLink(target: self, selector: #selector(updateContainerMenuButton))
+        displayLink = CADisplayLink(target: self, selector: "updateContainerMenuButton")
         displayLink.addToRunLoop(NSRunLoop.currentRunLoop(), forMode: NSRunLoopCommonModes)
         displayLink.paused = true
     }
